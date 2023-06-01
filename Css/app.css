@@ -1,0 +1,236 @@
+/* @media screen and (max-width: 800px) {
+    body, #wrapper, #header {
+      width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    /* }
+  } */ 
+  .body{
+    font-family: "Arial";
+    font-size: 13px;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#main{
+    /* padding-top: 70px; */
+    /* list-style: none; */
+    position: absolute;
+    top: 102px;
+    width: 100% ;
+    height: 1000px ;
+    background: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+#main li a{
+    list-style: none;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+#header{
+    height: 100px;
+    background-color: rgb(246, 171, 171);
+
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logo{
+    padding: 0px 0px;
+}
+
+#logo img{
+   position: absolute;
+   top: -50px;
+   left: 10px;
+    max-width: 200px;
+    height: auto;
+}
+
+#search {
+    width: 360px;
+  position: absolute;
+  top: 31px;
+  left: 240px;
+}
+
+#search img {
+    position: absolute;
+    top: 1px;
+    left: -45px;
+}
+
+#main-menu{
+    position: absolute;
+    right: 1px;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    /* font-size: 50px; */
+
+}
+#main-menu li{
+    position: relative;
+}
+
+#main-menu li a{
+    color: black;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+#main-menu ul.sub-menu{
+    position: absolute;
+    background-color: rgb(255, 189, 187);
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border: 1px solid rgb(208, 208, 208);
+    display: none;
+}
+
+#main-menu li:hover>ul.sub-menu{
+    display: block;
+}
+
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid rgb(246, 217, 217);
+    left: 0;
+
+}
+
+#main-menu ul.sub-menu li:hover a{
+    border-bottom: 1px solid #fff;
+}
+
+#main-menu ul.sub-menu li:last-child a{
+    border: none;
+}
+
+/* Thiết lập border khi hover */
+#main-menu>li>a{
+    position: relative;
+}
+#main-menu>li>a::before{
+    content: "";
+    height: 4px;
+    width: 0px; /*100%; */
+    background: red;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.15s cubic-bezier(0.075, 0.82, 0.165, 1);
+    /* display: none; */
+}
+#main-menu>li:hover>a::before{
+    width: 100%;
+    /* display: block; */
+}
+
+#main-menu>li.has-child::after{
+    /* content: mũi tên; */
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f107";
+    color: #debebe;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 18px 0px;
+}
+
+
+/* #foot {
+    position: absolute;
+    bottom: 0px ;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(99, 98, 98);
+    color: rgb(0, 0, 0);
+    text-align: center;
+} */
+
+.foot{
+    top: 1105;
+    background: rgb(247, 247, 247);
+    padding: 15px;
+    height: 400px;
+    display: flex;
+  }
+  .leftfooter {
+    width: 30%;
+    height: 400px;
+    background-color: #bdbdbd;
+    margin-left: 0px ;
+    position: relative;
+  }
+
+  .leftfooter img{
+    width: 200px;
+    height: 200px;
+  }
+  .camket {
+    margin-left: 150px;
+    margin-top: -100px ;
+  }
+  .leftfooter .camket p {
+    font-size: 19px;
+    font-family: Florence, cursive;
+    color: black;
+    
+  }
+  .centerfooter {
+    width: 40%;
+    height: 400px;
+    background-color: #bb5959;
+    position: relative;
+  }
+  .thongtinlienhe {
+    margin-left: 70px;
+  }
+  .thongtinlienhe p:first-child {
+   margin-left: 125px;
+    font-size: 20px;
+  }
+  
+  .thongtinlienhe p:nth-child(3) {
+    margin-left: 40px;
+    margin-top: -20px;
+    font-size: 15px;
+  }
+  .thongtinlienhe p:nth-child(5){
+    margin-left: 43px;
+    margin-top: -25px;
+    font-size: 15px;
+    }
+  
+  .thongtinlienhe p:nth-child(7) {
+    margin-left: 44px;
+    margin-top: -28px;
+    font-size: 16px;
+  }
+  .mxh p:first-child {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .rightfooter {
+    width: 30%;
+    height: 400px;
+    background: red;
+  }
+  .mxh {
+    width: 0;
+  }
+
+
+
